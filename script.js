@@ -1,8 +1,4 @@
-/* ============================================================
-   script.js — Vanilla JS for Hackathon Landing Page
-   ============================================================ */
-
-// ── DATA ──
+// data
 const CHALLENGES = [
   { id: "01", title: "Smart Traffic Management", img: "assets/challenges/1.jpg", desc: "Develop an AI-driven solution to dynamically control traffic signals based on live camera feeds and vehicle density." },
   { id: "02", title: "Healthcare Companion", img: "assets/challenges/2.jpg", desc: "Create a web or mobile application that integrates wearable data to provide health insights and medication reminders." },
@@ -36,7 +32,7 @@ const FAQS = [
 
 const ARROW_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10"/><path d="M7 7v10"/><path d="m7 7 10 10"/></svg>';
 
-// ── RENDER CHALLENGES ──
+// challenges list render karna
 function renderChallenges() {
   const list = document.getElementById("challengesList");
   if (!list) return;
@@ -73,7 +69,7 @@ function renderChallenges() {
     </li>
   `).join("");
 
-  // Accordion logic
+  // click pe accordion toggle
   let activeId = null;
   list.addEventListener("click", (e) => {
     const item = e.target.closest(".challenge-item");
@@ -90,7 +86,7 @@ function renderChallenges() {
   });
 }
 
-// ── RENDER TIMELINE ──
+// timeline render karna
 function renderTimeline() {
   const mobile = document.getElementById("timelineMobile");
   const desktop = document.getElementById("timelineDesktop");
@@ -116,7 +112,7 @@ function renderTimeline() {
   `).join("");
 }
 
-// ── RENDER FAQ ──
+// faqs show karna
 function renderFAQ() {
   const list = document.getElementById("faqList");
   if (!list) return;
@@ -138,7 +134,7 @@ function renderFAQ() {
   `).join("");
 }
 
-// ── NAVBAR TOGGLE ──
+// mobile navbar toggle
 function initNavbar() {
   const btn = document.getElementById("hamburgerBtn");
   const menu = document.getElementById("mobileMenu");
@@ -160,7 +156,7 @@ function initNavbar() {
   });
 }
 
-// ── TIMELINE DRAG SCROLL ──
+// desktop ke liye drag scroll
 function initTimelineDrag() {
   const el = document.getElementById("timelineDesktop");
   if (!el) return;
@@ -171,7 +167,7 @@ function initTimelineDrag() {
   el.addEventListener("mousemove", (e) => { if (!isDragging) return; e.preventDefault(); const x = e.pageX - el.offsetLeft; el.scrollLeft = scrollStart - (x - startX) * 2; });
 }
 
-// ── SCROLL REVEAL (IntersectionObserver) ──
+// scroll aane par elements animate karna
 function initScrollReveal() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -185,7 +181,7 @@ function initScrollReveal() {
   document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 }
 
-// ── SMOOTH SCROLL WITH OFFSET ──
+// thoda offset ke sath smooth scroll
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", (e) => {
@@ -201,7 +197,7 @@ function initSmoothScroll() {
   });
 }
 
-// ── INIT ──
+// sab initialize karna
 document.addEventListener("DOMContentLoaded", () => {
   renderChallenges();
   renderTimeline();
@@ -209,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
   initTimelineDrag();
   initSmoothScroll();
-  // Delay reveal init slightly so dynamically-rendered elements are in DOM
+  // thoda delay taaki dom items render ho jayein
   requestAnimationFrame(() => {
     initScrollReveal();
   });
