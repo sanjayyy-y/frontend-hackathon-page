@@ -757,9 +757,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .why__mobile { display: flex; flex-direction: column; align-items: center; width: 100%; gap: 0; }
 .why__desktop { display: none; }
 .why__cards-top, .why__cards-bottom { width: 100%; display: flex; flex-direction: column; }
-.why__card { background: var(--primary); padding: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.why__card { background: #8b5cf6; padding: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
 .why__cards-bottom .why__card:last-child { border-bottom: none; }
-.why__card h3 { font-size: 1.125rem; font-weight: 900; text-transform: uppercase; line-height: 1.2; margin-bottom: 0.25rem; }
+.why__card h3 { font-size: 1.125rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.25rem; }
 .why__card p { color: rgba(255,255,255,0.85); font-size: 12px; line-height: 1.6; font-weight: 500; }
 
 /* astronaut ka dabba */
@@ -820,13 +820,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-radius: 50%;
   z-index: 0;
 }
-.orbit-ring--1 { width: 200px; height: 200px; border: 1px solid rgba(139,92,246,0.4); animation: orbit 10s linear infinite; }
-.orbit-ring--2 { width: 280px; height: 280px; border: 1px dashed rgba(124,58,237,0.3); animation: orbit-reverse 18s linear infinite; }
-.orbit-ring--3 { width: 360px; height: 360px; border: 1px solid rgba(124,58,237,0.1); }
-.orbit-ring--d1 { width: 340px; height: 340px; border: 1px solid rgba(139,92,246,0.4); animation: orbit 10s linear infinite; }
-.orbit-ring--d2 { width: 520px; height: 520px; border: 1px dashed rgba(124,58,237,0.3); animation: orbit-reverse 18s linear infinite; }
-.orbit-ring--d3 { width: 700px; height: 700px; border: 1px solid rgba(124,58,237,0.18); animation: orbit 30s linear infinite; }
-.orbit-ring--d4 { width: 860px; height: 860px; border: 1px solid rgba(124,58,237,0.08); }
+.orbit-ring--1 { width: 200px; height: 200px; border: 1px solid rgba(139,92,246,0.6); animation: orbit 10s linear infinite; }
+.orbit-ring--2 { width: 280px; height: 280px; border: 1px dashed rgba(124,58,237,0.5); animation: orbit-reverse 18s linear infinite; }
+.orbit-ring--3 { width: 360px; height: 360px; border: 1px solid rgba(124,58,237,0.4); animation: orbit 25s linear infinite; }
+.orbit-ring--d1 { width: 340px; height: 340px; border: 1px solid rgba(139,92,246,0.6); animation: orbit 15s linear infinite; }
+.orbit-ring--d2 { width: 520px; height: 520px; border: 1px dashed rgba(124,58,237,0.5); animation: orbit-reverse 20s linear infinite; }
+.orbit-ring--d3 { width: 700px; height: 700px; border: 1px solid rgba(124,58,237,0.4); animation: orbit 25s linear infinite; }
+.orbit-ring--d4 { width: 860px; height: 860px; border: 1px solid rgba(124,58,237,0.3); animation: orbit-reverse 35s linear infinite; }
 .orbit-dot {
   position: absolute;
   top: -4px;
@@ -861,20 +861,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   }
   .why__left-card, .why__right-card {
     position: relative;
-    background: var(--primary);
+    background: #8b5cf6;
     padding: 2.5rem;
-    width: 32%;
+    width: 33%;
     z-index: 20;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 3rem;
   }
   .why__left-card { text-align: right; padding-left: 5rem; padding-right: 2.5rem; }
   .why__right-card { text-align: left; padding-right: 5rem; padding-left: 2.5rem; margin-left: auto; }
-  .why__benefit h3 { font-size: 1.5rem; font-weight: 900; text-transform: uppercase; line-height: 1.2; margin-bottom: 0.5rem; }
-  .why__benefit p { color: rgba(255,255,255,0.9); font-size: 12px; line-height: 1.6; font-weight: 500; }
-  .why__left-card .why__benefit p { margin-left: auto; max-width: 240px; }
-  .why__right-card .why__benefit p { max-width: 240px; }
+  .why__benefit h3 { font-size: 1.125rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.5rem; }
+  .why__benefit p { color: rgba(255,255,255,0.95); font-size: 0.9375rem; line-height: 1.6; font-weight: 400; }
+  .why__left-card .why__benefit p { margin-left: auto; max-width: 260px; }
+  .why__right-card .why__benefit p { max-width: 260px; }
   .why__astro-center {
     position: absolute;
     left: 50%;
@@ -890,13 +890,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     pointer-events: none;
   }
   /* side mein design wale dabbe */
-  .why__side-decor { position: absolute; top: 0; height: 100%; display: flex; align-items: center; pointer-events: none; }
+  .why__side-decor { position: absolute; top: 0; height: 100%; display: flex; flex-direction: column; justify-content: center; gap: 4.5rem; pointer-events: none; }
   .why__side-decor--right { right: 0; transform: translateX(100%); }
-  .why__side-decor--left { left: 0; transform: translateX(-100%); flex-direction: row-reverse; }
-  .side-block-row { display: flex; flex-direction: column; gap: 3.75rem; }
-  .side-block-row > div { display: flex; align-items: center; }
-  .side-block--white { width: 20px; height: 60px; background: #fff; margin: 0 -5px; }
-  .side-block--purple { width: 80px; height: 60px; background: var(--primary); }
+  .why__side-decor--left { left: 0; transform: translateX(-100%); }
+  .side-protrusion { display: flex; flex-direction: row; align-items: center; }
+  .side-block--white { width: 16px; height: 48px; background: #fff; position: relative; z-index: 2; }
+  .side-block--purple { width: 80px; height: 48px; background: #8b5cf6; position: relative; z-index: 1; margin: 0 -4px; }
 }
 
 /* kya milega */
