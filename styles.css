@@ -1,4 +1,4 @@
-/* styling start */
+
 
 /* color aur font variables */
 :root {
@@ -482,17 +482,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .what-is__title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; text-transform: uppercase; margin-bottom: 2rem; line-height: 1.2; letter-spacing: -0.02em; }
 .what-is__desc { color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; max-width: 90%; }
 .what-is__submission { margin-top: 4rem; }
-.what-is__sub-label { display: block; color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem; }
-.what-is__timer-row { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: stretch; position: relative; }
-.what-is__timer-row::before { content: ''; position: absolute; left: -100vw; right: -100vw; top: 50%; height: 1px; background: linear-gradient(90deg, rgba(163,230,53,0.1), #a3e635, #fbbf24, rgba(251,191,36,0.1)); z-index: -1; }
-.what-is__timer-box { font-family: monospace; font-size: 1.125rem; background: #2a2a2a; padding: 0.75rem 1.5rem; color: #fff; width: fit-content; }
-.what-is__register-box { font-size: 1rem; background: #3d3159; padding: 0.75rem 2rem; color: #fff; font-weight: 600; width: fit-content; transition: filter 0.2s; cursor: pointer; text-align: center; }
-.what-is__register-box:hover { filter: brightness(1.2); }
+.what-is__sub-label { display: block; color: var(--text-white); font-size: 1.125rem; font-weight: 500; margin-bottom: 1.5rem; letter-spacing: 0.02em; }
+.what-is__timer-row { display: flex; gap: 2.5rem; align-items: stretch; margin-top: 1.5rem; }
 
-.box-corners { position: relative; }
-.box-corners::before, .box-corners::after { content: ''; position: absolute; width: 100%; height: 100%; top: 0; left: 0; pointer-events: none; }
-.box-corners::before { border-top: 1px solid rgba(255,255,255,0.6); border-bottom: 1px solid rgba(255,255,255,0.6); transform: scaleX(1.15); }
-.box-corners::after { border-left: 1px solid rgba(255,255,255,0.6); border-right: 1px solid rgba(255,255,255,0.6); transform: scaleY(1.15); }
+.what-is__timer-box { font-family: var(--font); font-size: 1.25rem; background: #363539; padding: 1.25rem 2.5rem; color: #fff; width: fit-content; min-width: 260px; display: flex; align-items: center; justify-content: center; }
+.what-is__register-box { font-family: var(--font); font-size: 1.25rem; background: linear-gradient(135deg, #42296b, #55447a); padding: 1.25rem 2.5rem; color: #fff; font-weight: 500; width: fit-content; transition: filter 0.2s; cursor: pointer; text-align: center; min-width: 260px; display: flex; align-items: center; justify-content: center; }
+.what-is__register-box:hover { filter: brightness(1.15); }
+
+.box-corners { position: relative; border: 1px solid rgba(255,255,255,0.05); }
+.box-corners::before { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; bottom: -1px; pointer-events: none; background: linear-gradient(to right, white 2px, transparent 2px) 0 0, linear-gradient(to bottom, white 2px, transparent 2px) 0 0, linear-gradient(to left, white 2px, transparent 2px) 100% 0, linear-gradient(to bottom, white 2px, transparent 2px) 100% 0, linear-gradient(to right, white 2px, transparent 2px) 0 100%, linear-gradient(to top, white 2px, transparent 2px) 0 100%, linear-gradient(to left, white 2px, transparent 2px) 100% 100%, linear-gradient(to top, white 2px, transparent 2px) 100% 100%; background-repeat: no-repeat; background-size: 12px 12px; }
 
 .what-is__gallery { position: relative; height: 500px; width: 100%; max-width: 500px; margin: 0 auto; display: flex; justify-content: center; align-items: center; }
 @media (min-width: 1024px) { .what-is__gallery { height: 600px; max-width: 600px; } }
