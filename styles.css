@@ -997,14 +997,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .faq-item__answer-col p { color: var(--text-muted); font-size: 0.9375rem; line-height: 1.6; max-width: 32rem; }
 }
 
-.faq__footer-decor { position: absolute; bottom: 0; left: 0; width: 100%; height: 300px; pointer-events: none; z-index: 0; }
-@media (min-width: 768px) { .faq__footer-decor { height: 600px; } }
-.faq__footer-decor img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom; }
 
 /* footer sabse neeche */
-.footer { position: relative; padding: 10rem 0 3rem; background: #000; overflow: hidden; z-index: 1; }
-.footer__decor { position: absolute; top: 0; left: 0; width: 100%; height: 600px; pointer-events: none; z-index: 0; opacity: 0.8; }
-.footer__decor img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom; transform: scale(1.5) translateY(25%); }
+.footer { position: relative; padding: 10rem 0 3rem; background: transparent; overflow: hidden; z-index: 1; }
+.footer__decor { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 1; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 25%); mask-image: linear-gradient(to bottom, transparent 0%, black 25%); }
+.footer__decor img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: bottom; }
 .footer__inner {
   position: relative;
   z-index: 10;
@@ -1012,7 +1009,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   flex-direction: column;
   gap: 3rem;
   padding-top: 5rem;
-  border-top: 1px solid var(--border-subtle);
 }
 @media (min-width: 768px) { .footer__inner { flex-direction: row; justify-content: space-between; align-items: flex-end; } }
 .footer__logo { font-size: 2.25rem; font-weight: 900; letter-spacing: -0.05em; margin-bottom: 1.5rem; }
