@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Future Intelligence Agency Hackathon — Code the Future. A national-level hackathon for students across India." />
+  <title>FIA Hackathon — Code The Future</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Global Background Glows -->
+  <div class="global-bg" aria-hidden="true">
+    <div class="glow glow--top-left"></div>
+    <div class="glow glow--hero-transition"></div>
+    <div class="glow glow--mid-right"></div>
+    <div class="glow glow--mid-left"></div>
+    <div class="glow glow--bottom-right"></div>
+    <div class="glow glow--bottom-center"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__container">
+      <div class="navbar__bar">
+        <a href="#hero" class="navbar__logo">
+          <img src="assets/navbar_logo.png" alt="FIA Hackathon Logo" />
+        </a>
+        <div class="navbar__links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#how-to">How to participate?</a>
+          <a href="#challenges">Challenges</a>
+          <a href="#schedules">Schedules</a>
+          <a href="#rewards">Rewards</a>
+          <a href="#faq">FAQs</a>
+        </div>
+        <div class="navbar__actions">
+          <button class="btn-signin" aria-label="Sign In">Sign In</button>
+          <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+            <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="navbar__mobile-menu" id="mobileMenu">
+      <div class="navbar__mobile-links">
+        <a href="#about">About</a>
+        <a href="#how-to">How to participate?</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#schedules">Schedules</a>
+        <a href="#rewards">Rewards</a>
+        <a href="#faq">FAQs</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/hero_bg.jpg" alt="" loading="eager" />
+        <div class="hero__overlay-top"></div>
+        <div class="hero__overlay-bottom"></div>
+      </div>
+      <div class="hero__content">
+        <!-- Mobile Layout -->
+        <div class="hero__mobile">
+          <div class="hero__title reveal">
+            <h1><span class="hero__title-white">CODE THE</span><span class="hero__title-outline">FUTURE</span></h1>
+          </div>
+          <div class="hero__character reveal">
+            <img src="assets/about.png" alt="Hackathon Character" />
+          </div>
+          <p class="hero__tagline reveal">WHERE INNOVATION BECOMES REALITY</p>
+          <div class="hero__cta reveal">
+            <div class="corner-bracket corner-bracket--tl"></div>
+            <div class="corner-bracket corner-bracket--br"></div>
+            <a href="#register" class="btn-register">Register Now</a>
+          </div>
+        </div>
+        <!-- Desktop Layout -->
+        <div class="hero__desktop">
+          <div class="hero__character-desktop reveal">
+            <img src="assets/about.png" alt="Hackathon Character" />
+            <p class="hero__tagline">WHERE INNOVATION BECOMES REALITY</p>
+          </div>
+          <div class="hero__title-desktop reveal">
+            <h1><span class="hero__title-white">CODE THE</span><span class="hero__title-outline">FUTURE</span></h1>
+          </div>
+          <div class="hero__cta-desktop reveal">
+            <div class="corner-bracket corner-bracket--tl"></div>
+            <div class="corner-bracket corner-bracket--br"></div>
+            <a href="#register" class="btn-register btn-register--lg">Register Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+      <div class="about__transition" aria-hidden="true"></div>
+      <div class="about__decor-left" aria-hidden="true">
+        <div class="decor-block"></div><div class="decor-block decor-block--offset"></div>
+        <div class="decor-block"></div><div class="decor-block decor-block--offset"></div>
+        <div class="decor-block"></div>
+      </div>
+      <div class="about__decor-right" aria-hidden="true">
+        <div class="decor-block"></div><div class="decor-block decor-block--offset"></div>
+        <div class="decor-block"></div><div class="decor-block decor-block--offset"></div>
+        <div class="decor-block"></div>
+      </div>
+      <div class="container about__inner">
+        <span class="section-label reveal">About Hackathon</span>
+        <h2 class="section-heading reveal">WHO CAN PARTICIPATE?</h2>
+        <p class="section-desc reveal">Open to students from all Indian institutions, this hackathon welcomes creative minds across three major categories:</p>
+        <ul class="about__grid">
+          <li class="about__card reveal"><div class="about__dot-ring"><div class="about__dot"></div></div><h3>Undergraduate Students</h3></li>
+          <li class="about__card reveal"><div class="about__dot-ring"><div class="about__dot"></div></div><h3>Graduate/ Postgraduate Students</h3></li>
+          <li class="about__card reveal"><div class="about__dot-ring"><div class="about__dot"></div></div><h3>PhD Students/ Research Scholars</h3></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO PARTICIPATE ============ -->
+    <section id="how-to" class="howto">
+      <div class="container">
+        <h2 class="section-label reveal">How to participate?</h2>
+        <ol class="howto__grid">
+          <li class="howto__step reveal">
+            <div class="howto__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg></div>
+            <span class="howto__pill">Step 1</span>
+            <h3>Team<br>Formation</h3>
+            <p>Assemble a team of 3-4 passionate students from any Indian institution.</p>
+          </li>
+          <li class="howto__step reveal">
+            <div class="howto__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></div>
+            <span class="howto__pill">Step 2</span>
+            <h3>Idea<br>Submission</h3>
+            <p>Submit your innovative proposal based on the provided challenge statements.</p>
+          </li>
+          <li class="howto__step reveal">
+            <div class="howto__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+            <span class="howto__pill">Step 3</span>
+            <h3>Initial<br>Screening</h3>
+            <p>Our jury evaluates the submissions based on creativity, feasibility, and impact.</p>
+          </li>
+          <li class="howto__step reveal">
+            <div class="howto__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></div>
+            <span class="howto__pill">Step 4</span>
+            <h3>Pitching<br>Round</h3>
+            <p>Shortlisted teams will present their prototypes to an expert panel.</p>
+          </li>
+          <li class="howto__step reveal">
+            <div class="howto__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></div>
+            <span class="howto__pill">Step 5</span>
+            <h3>Final<br>Results</h3>
+            <p>Winners are announced and rewarded for their groundbreaking solutions.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CHALLENGES ============ -->
+    <section id="challenges" class="challenges">
+      <div class="container challenges__inner">
+        <h2 class="section-label reveal">Challenges</h2>
+        <ul class="challenges__list" id="challengesList">
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE / SCHEDULE ============ -->
+    <section id="schedules" class="timeline">
+      <div class="container">
+        <h2 class="section-label reveal">Hackathon Schedule</h2>
+        <!-- Mobile: vertical -->
+        <ol class="timeline__vertical" id="timelineMobile">
+        </ol>
+        <!-- Desktop: horizontal draggable -->
+        <ol class="timeline__horizontal" id="timelineDesktop">
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHY PARTICIPATE ============ -->
+    <section id="why" class="why">
+      <h2 class="section-label reveal">Why Participate?</h2>
+      <!-- Mobile -->
+      <div class="why__mobile">
+        <ul class="why__cards-top">
+          <li class="why__card"><h3>National Recognition</h3><p>Get recognized at a national level for your innovative solutions and technical prowess.</p></li>
+          <li class="why__card"><h3>Networking</h3><p>Connect with peers, professionals, and innovation leaders from across the nation.</p></li>
+        </ul>
+        <div class="why__astro-container">
+          <div class="orbit-ring orbit-ring--1" aria-hidden="true"><div class="orbit-dot"></div></div>
+          <div class="orbit-ring orbit-ring--2" aria-hidden="true"><div class="orbit-dot"></div><div class="orbit-dot orbit-dot--opposite"></div></div>
+          <div class="orbit-ring orbit-ring--3" aria-hidden="true"></div>
+          <div class="glow-core" aria-hidden="true"></div>
+          <img src="assets/ast.png" alt="Floating astronaut" class="why__astronaut" />
+        </div>
+        <ul class="why__cards-bottom">
+          <li class="why__card"><h3>Skill Enhancement</h3><p>Hone your technical skills and learn new technologies through hands-on building.</p></li>
+          <li class="why__card"><h3>Real-World Impact</h3><p>Contribute to meaningful challenges that aim to improve lives and systems at scale.</p></li>
+        </ul>
+      </div>
+      <!-- Desktop -->
+      <div class="why__desktop">
+        <div class="why__left-card reveal">
+          <div class="why__side-decor why__side-decor--right" aria-hidden="true">
+            <div class="side-block-row"><div class="side-block--white"></div><div class="side-block--purple"></div></div>
+            <div class="side-block-row"><div class="side-block--white"></div><div class="side-block--purple"></div></div>
+          </div>
+          <div class="why__benefit"><h3>National Recognition</h3><p>Get recognized at a national level for your innovative solutions and technical prowess.</p></div>
+          <div class="why__benefit"><h3>Networking</h3><p>Connect with peers, professionals, and innovation leaders from across the nation.</p></div>
+        </div>
+        <div class="why__astro-center">
+          <div class="glow-core glow-core--lg" aria-hidden="true"></div>
+          <div class="glow-secondary" aria-hidden="true"></div>
+          <div class="glow-nebula" aria-hidden="true"></div>
+          <div class="orbit-ring orbit-ring--d1" aria-hidden="true"><div class="orbit-dot"></div></div>
+          <div class="orbit-ring orbit-ring--d2" aria-hidden="true"><div class="orbit-dot"></div><div class="orbit-dot orbit-dot--opposite"></div></div>
+          <div class="orbit-ring orbit-ring--d3" aria-hidden="true"><div class="orbit-dot"></div></div>
+          <div class="orbit-ring orbit-ring--d4" aria-hidden="true"></div>
+          <img src="assets/ast.png" alt="Floating astronaut" class="why__astronaut why__astronaut--lg" />
+        </div>
+        <div class="why__right-card reveal">
+          <div class="why__side-decor why__side-decor--left" aria-hidden="true">
+            <div class="side-block-row"><div class="side-block--purple"></div><div class="side-block--white"></div></div>
+            <div class="side-block-row"><div class="side-block--purple"></div><div class="side-block--white"></div></div>
+          </div>
+          <div class="why__benefit"><h3>Skill Enhancement</h3><p>Hone your technical skills and learn new technologies through hands-on building.</p></div>
+          <div class="why__benefit"><h3>Real-World Impact</h3><p>Contribute to meaningful challenges that aim to improve lives and systems at scale.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REWARDS ============ -->
+    <section id="rewards" class="rewards">
+      <div class="container rewards__inner">
+        <h2 class="section-label reveal">Rewards and Benefits</h2>
+        <ul class="rewards__grid">
+          <li class="rewards__card reveal"><h3>Mentorship from Experts</h3><p>Work under the guidance of domain professionals and technology mentors.</p></li>
+          <li class="rewards__card reveal"><h3>Recognition and Internship Opportunities</h3><p>Outstanding performers may receive offers for internships or collaboration opportunities.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="faq">
+      <div class="faq__brain-glow" aria-hidden="true"></div>
+      <div class="faq__brain-img" aria-hidden="true">
+        <img src="assets/FAQ.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="container faq__inner">
+        <p class="section-label reveal">FREQUENTLY ASKED QUESTION</p>
+        <ul class="faq__list" id="faqList">
+        </ul>
+      </div>
+      <div class="faq__footer-decor" aria-hidden="true">
+        <img src="assets/footer.png" alt="" loading="lazy" />
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__decor" aria-hidden="true">
+      <img src="assets/footer.png" alt="" />
+    </div>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">FIA<span>.</span></div>
+        <p>Future Intelligence Agency - Bridging the gap between theory and futuristic implementation.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__nav">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <p class="footer__copy">&copy; 2026 Future Intelligence Agency. All rights reserved.<br>Powered by Hack2Skill.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
