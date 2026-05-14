@@ -7,6 +7,9 @@ This repository contains the frontend assignment for the Hack2Skill hackathon la
 - **CSS3:** Custom properties (variables) for design tokens, Flexbox/Grid layouts, glassmorphism effects, and pure CSS `@keyframes` animations (no external animation libraries used).
 - **Vanilla JavaScript (ES6+):** For DOM manipulation, mobile navbar toggling, custom accordion logic, horizontal drag-to-scroll, and scroll-triggered reveals using `IntersectionObserver`.
 
+## 🔗 Live Preview
+**[View Live Demo →](https://sanjayyy-y.github.io/frontend-hackathon-page/)**
+
 ## 📁 File Structure
 
 ```text
