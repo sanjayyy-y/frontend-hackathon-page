@@ -296,22 +296,23 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero__desktop { display: none; }
 .hero__title h1 { display: flex; flex-direction: column; text-align: center; }
 .hero__title-white {
+  font-family: 'Satoshi', var(--font);
   font-size: clamp(2.5rem, 10vw, 3.5rem);
   font-weight: 900;
   color: #fff;
-  line-height: 1.1;
-  letter-spacing: -0.05em;
+  line-height: 100%;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 .hero__title-outline {
+  font-family: 'Satoshi', var(--font);
   font-size: clamp(2.5rem, 10vw, 3.5rem);
   font-weight: 900;
-  line-height: 1.1;
-  letter-spacing: -0.05em;
+  line-height: 100%;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 1px var(--primary-soft);
-  opacity: 0.8;
+  -webkit-text-stroke: 3px var(--primary);
   margin-top: 0.25rem;
 }
 .hero__character {
@@ -380,14 +381,22 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   }
   .hero__title-desktop h1 { position: relative; }
   .hero__title-desktop .hero__title-white {
-    font-size: 80px;
+    font-family: 'Satoshi', var(--font);
+    font-size: 104.36px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 0;
     display: block;
     text-align: left;
     position: relative;
     z-index: 20;
   }
   .hero__title-desktop .hero__title-outline {
-    font-size: 80px;
+    font-family: 'Satoshi', var(--font);
+    font-size: 104.36px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: 0;
     display: block;
     position: absolute;
     top: 95%;
@@ -395,6 +404,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     z-index: 10;
     text-align: left;
     margin-top: 0;
+    -webkit-text-stroke: 4.66px #7C3AED;
+    opacity: 1;
   }
   .hero__cta-desktop {
     position: absolute;
